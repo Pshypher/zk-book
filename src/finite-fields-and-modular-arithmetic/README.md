@@ -108,6 +108,21 @@ second_root = p - first_root
 
 ###### Write code to bruteforce every combination of (x, y) over x = 0..10, y = 0..10 to verify the above system has no solution over the finite field of p = 11.
 
+```python
+import galois
+p = 11
+GF = galois.GF(p)
+one_half = GF(1) / GF(2)
+two_third = GF(2) / GF(3)
+seven_third = GF(7) / GF(3)
+pairs = []
+for x in range(0, p):
+    y1 = one_half - one_half * GF(x)
+    y2 = two_third - seven_third * GF(x)
+    print("[(", x, ",", y1, "), (", x, ",", y2, ")]", sep = "", end = " ")
+    
+ print()
+```
 ## Exercise 10
 ***
 
