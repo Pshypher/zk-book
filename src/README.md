@@ -1,4 +1,6 @@
-# <center>🪛 RareSkills Book of Zero Knowledge 🔩 </center>
+<p align="center">
+#🪛 RareSkills Book of Zero Knowledge 🔩
+</p>
 
 <p style="text-align: center">Exercises & codes from the "<a href="https://www.rareskills.io/zk-book">Zero Knowledge Book</a>" by RareSkills.</p>
 
