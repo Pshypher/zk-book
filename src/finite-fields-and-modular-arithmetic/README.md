@@ -1,15 +1,12 @@
 # Chapter 2: Finite Fields and Modular Arithmetic
-***
 
 ## Exercise 1
-***
 
 ###### Let’s say we pick a p >= 3. Which, if any, non-zero values are their own additive inverse?
 
 The non-zero values say _**x**_ in the finite-field _**(mod p)**_ have their additive inverse expressed as _**p + (-x) == p - x**_
 
 ## Exercise 2
-***
 
 ###### Find the multiplicative inverse of 3 modulo 5. There are only 5 possibilities, so try all of them and see which ones work.
 
@@ -25,7 +22,6 @@ _3<sup>3</sup> (mod 5) == 2 (mod 5)_
 
 
 ## Exercise 3
-***
 
 ###### What is the multiplicative inverse of 50 in the finite field p = 51? You do not need Python to compute this, see the principles described in “General rules of multiplicative inverses.
 
@@ -34,7 +30,6 @@ _p = 51 &  p - 1 = 50_
 The multiplicative inverse for _(p - 1)_ is itself _(p - 1)_
 
 ## Exercise 4
-***
 
 ###### Use Python to compute the multiplicative inverse of 288 in the finite field of p = 311. You can check your work by validating that (288 * answer) % 311 == 1.
 
@@ -43,7 +38,6 @@ print(pow(288, -1, 311)
 ```
 
 ## Exercise 5
-***
 
 ###### Run pow(7, -1, 7) in Python. You should see an exception get thrown, ValueError: base is not invertible for the given modulus.
 
@@ -55,7 +49,6 @@ ValueError: base is not invertible for the given modulus
 ```
 
 ## Exercise 6
-***
 
 ###### Check that 3/4 * 1/2 = 3/8 in the finite field p = 17.
 
@@ -69,7 +62,6 @@ assert one_half * three_quarter == three_eighth
 ```
 
 ## Exercise 7
-***
 
 ###### Verify the claimed square roots in the table are correct in the finite field modulo 11.
 
@@ -86,7 +78,6 @@ for i in range(0, p):
 ```
 
 ## Exercise 8
-***
 
 ```python
 def mod_sqrt(x, p):
@@ -104,7 +95,6 @@ second_root = p - first_root
 ```
 
 ## Exercise 9
-***
 
 ###### Write code to bruteforce every combination of (x, y) over x = 0..10, y = 0..10 to verify the above system has no solution over the finite field of p = 11.
 
@@ -124,7 +114,6 @@ for x in range(0, p):
  print()
 ```
 ## Exercise 10
-***
 
 > _x + 2y = 3_
 >
@@ -149,12 +138,10 @@ for x in range(0, p):
 > _y = 7 - 6x_
 
 # Practice Problems
-***
 
 ###### In the problems below, use a finite field p of 21888242871839275222246405745257275088548364400416034343698204186575808495617. Beware that the galois library takes a while to initialize a GF object, galois.GF(p), of this size.
 
 ## Exercise 1
-***
 
 ###### A dev creates an arithmetic circuit x * y * z === 0 and x + y + z === 0 with the intent of constraining all the signals to be zero. Find a counter example to this where the constraints are satisfied, but not all of x, y, and z are 0.
 
@@ -176,7 +163,7 @@ A valid counter example is _**x = 0, y = p - 1, z = 1**_.
 > _**x * y * z === 0 * (p - 1) * 1 === 0**_
 
 ## Exercise 2
-***
+
 
 ###### A dev creates a circuit with the polynomial x² + 2x + 3 === 11 and proves that 2 is a solution. What is the other solution? Hint: write the circuit as x² + 2x - 8 === 0 then factor the polynomial by hand to find the roots. Finally, compute the congruent element of the roots in the finite field to find the other solution.
 
