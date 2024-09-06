@@ -81,9 +81,9 @@ for i in range(0, p):
 
 ```python
 def mod_sqrt(x, p):
-        assert (p - 3) % 4 == 0, "prime cannot be expressed as a result of 4k + 3"
-        exponent = (p + 1) // 4
-        return pow(x, exponent, p) # x ^ e % p
+    assert (p - 3) % 4 == 0, "prime cannot be expressed as a result of 4k + 3"
+    exponent = (p + 1) // 4
+    return pow(x, exponent, p) # x ^ e % p
 ```
 
 ###### Use the code snippet above to compute the modular square root of 5 in the finite field of p = 23. The code will only give you one of the answers. How can you compute the other?

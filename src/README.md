@@ -2,7 +2,7 @@
 
 <p align="center">Exercises & codes from the "<a href="https://www.rareskills.io/zk-book">Zero Knowledge Book</a>" by RareSkills.</p>
 
-## <center> Chapters </center>
+<h2 align="center"> Chapters </h2>
 ### 1. [Arithmetic Circuits]()
 ### 2. [Finite Fields and Modular Arithmetic]()
 ### 3. [Set Theory]()
